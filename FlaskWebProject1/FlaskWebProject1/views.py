@@ -12,7 +12,7 @@ def home():
     """Renders the home page."""
     return render_template(
         'index.html',
-        title='Home Page',
+        title='ホーム',
         year=datetime.now().year,
     )
 
@@ -21,9 +21,9 @@ def contact():
     """Renders the contact page."""
     return render_template(
         'contact.html',
-        title='Contact',
+        title='コンタクト',
         year=datetime.now().year,
-        message='Your contact page.'
+        message='コンタクトページです'
     )
 
 @app.route('/about')
@@ -31,7 +31,7 @@ def about():
     """Renders the about page."""
     return render_template(
         'about.html',
-        title='About',
+        title='詳細',
         year=datetime.now().year,
-        message='Your application description page.'
+        message='詳細ページです'
     )
